@@ -1,0 +1,5 @@
+# Local configuration
+config.yaml
+
+# Workspace Go build cache
+.gocache/

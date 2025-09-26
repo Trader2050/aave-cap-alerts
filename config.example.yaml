@@ -1,0 +1,21 @@
+# Copy this file to config.yaml and replace the placeholder values with your own.
+rpc_url: "https://rpc.plasma.to"
+# Optional global polling interval for all assets. Individual assets can override this.
+poll_interval: "1m"
+
+assets:
+  - name: "USDe"
+    address: "0x7519403E12111ff6b710877Fcd821D0c12CAF43A"
+    notify_on_increase: true
+    notify_on_decrease: false
+  - name: "sUSDe"
+    address: "0xC1A318493fF07a68fE438Cee60a7AD0d0DBa300E"
+    notify_on_increase: true
+    notify_on_decrease: false
+
+notifications:
+  telegram:
+    bot_token: "123456789:YOUR_TELEGRAM_BOT_TOKEN"
+    chat_id: "-1001234567890"
+  json_rpc:
+    url: "https://example.com/rpc-endpoint"
